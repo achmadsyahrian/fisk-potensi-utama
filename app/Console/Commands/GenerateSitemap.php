@@ -28,25 +28,13 @@ class GenerateSitemap extends Command
                 ->setPriority(0.8)
             )
             // Ekonomi Syariah
-            ->add(Url::create('/ekonomi-syariah')
+            ->add(Url::create('/hubungan-internasional')
                 ->setLastModificationDate(now())
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                 ->setPriority(0.8)
             )
             // Perbankan Syariah
-            ->add(Url::create('/perbankan-syariah')
-                ->setLastModificationDate(now())
-                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
-                ->setPriority(0.8)
-            )
-            // Akuntansi
-            ->add(Url::create('/akuntansi')
-                ->setLastModificationDate(now())
-                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
-                ->setPriority(0.8)
-            )
-            // Manajemen
-            ->add(Url::create('/manajemen')
+            ->add(Url::create('/pendidikan-bahasa-inggris')
                 ->setLastModificationDate(now())
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                 ->setPriority(0.8)

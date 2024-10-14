@@ -7,7 +7,7 @@
                 <nav class="classy-navbar justify-content-between" id="newsboxNav">
 
                     <!-- Nav brand -->
-                    <a href="{{route('landing.home')}}" class="nav-brand"><img src="{{asset('landing/assets/img/logo-img/logo-fakultas.png')}}" alt=""></a>
+                    <a href="{{route('landing.home')}}" class="nav-brand"><img src="{{asset('landing/assets/img/logo-img/logo-fakultas.png')}}" alt="{{env('APP_NAME')}}"></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">

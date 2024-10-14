@@ -23,9 +23,9 @@
                                             @if ($latestNews[0]->thumbnail)
                                                 <img src="{{ asset($latestNews[0]->thumbnail) }}"
                                                 style="height:500px; object-fit:cover;" class="img-fluid"
-                                                alt="">
+                                                alt="{{$latestNews[0]->title}}">
                                             @else
-                                                <img src="{{ asset('landing/assets/img/logo-img/Logopotensiutama.png') }}" style="height:500px; object-fit:cover;" alt="">
+                                                <img src="{{ asset('landing/assets/img/logo-img/Logopotensiutama.png') }}" style="height:500px; object-fit:cover;" alt="Universitas Potensi Utama">
                                             @endif
                                         </a>
                                     </div>
@@ -48,9 +48,9 @@
                                             @if ($latestNews[1]->thumbnail)
                                             <img src="{{ asset($latestNews[1]->thumbnail) }}"
                                                 style="height:235px; object-fit:cover;" class="img-fluid"
-                                                alt="">
+                                                alt="{{$latestNews[1]->title}}">
                                             @else
-                                                <img src="{{ asset('landing/assets/img/logo-img/Logopotensiutama.png') }}" style="height:235px; object-fit:cover;" alt="">
+                                                <img src="{{ asset('landing/assets/img/logo-img/Logopotensiutama.png') }}" style="height:235px; object-fit:cover;" alt="Universitas Potensi Utama">
                                             @endif
                                         </a>
                                     </div>
@@ -70,9 +70,9 @@
                                             @if ($latestNews[2]->thumbnail)
                                                 <img src="{{ asset($latestNews[2]->thumbnail) }}"
                                                     style="height:235px; object-fit:cover;" class="img-fluid"
-                                                    alt="">
+                                                    alt="{{$latestNews[2]->title}}">
                                             @else
-                                                <img src="{{ asset('landing/assets/img/logo-img/Logopotensiutama.png') }}" style="height:235px; object-fit:cover;" alt="">
+                                                <img src="{{ asset('landing/assets/img/logo-img/Logopotensiutama.png') }}" style="height:235px; object-fit:cover;" alt="Universitas Potensi Utama">
                                             @endif
                                         </a>
                                     </div>
@@ -117,9 +117,9 @@
                                                             @if ($post->thumbnail)
                                                                 <img src="{{ asset($post->thumbnail) }}"
                                                                 style="height:240px; object-fit:cover;" class="img-fluid"
-                                                                alt="">
+                                                                alt="{{$post->title}}">
                                                             @else
-                                                                <img src="{{ asset('landing/assets/img/logo-img/Logopotensiutama.png') }}" style="height:240px; object-fit:cover;" alt="">
+                                                                <img src="{{ asset('landing/assets/img/logo-img/Logopotensiutama.png') }}" style="height:240px; object-fit:cover;" alt="Universitas Potensi Utama">
                                                             @endif
                                                         </a>
                                                         <span class="category-label">{{ $post->category->name }}</span>
@@ -142,9 +142,9 @@
                                                             @if ($post->thumbnail)
                                                                 <img src="{{ asset($post->thumbnail) }}"
                                                                 style="height:90px; object-fit:cover;" class="img-fluid"
-                                                                alt="">
+                                                                alt="{{$post->title}}">
                                                             @else
-                                                                <img src="{{ asset('landing/assets/img/logo-img/Logopotensiutama.png') }}" style="height:90px; object-fit:cover;" alt="">
+                                                                <img src="{{ asset('landing/assets/img/logo-img/Logopotensiutama.png') }}" style="height:90px; object-fit:cover;" alt="Universitas Potensi Utama">
                                                             @endif
                                                         </a>
                                                     </div>
@@ -177,7 +177,7 @@
                         <div class="single-widget-area add-widget mb-30">
                             <a href="#">
                                 <img src="{{ asset('landing/assets/img/ads-img/banner-potrait-sidebar.jpeg') }}"
-                                    alt="">
+                                    alt="{{env('APP_NAME')}}">
                             </a>
                         </div>
 
@@ -253,7 +253,7 @@
         <div class="container-fluid text-center">
             <a href="#"><img
                     src="{{ asset('landing/assets/img/ads-img/Web-Header-pendaftaran-v2-1536x640-1.jpg') }}"
-                    style="width:1160px;" alt="" title=""></a>
+                    style="width:1160px;" alt="{{env('APP_NAME')}}" title=""></a>
         </div>
     </div>
 
@@ -263,7 +263,7 @@
         </div>
     </div>
     <section class="video-area bg-img bg-fixed"
-        style="background-image: url({{ asset('landing/assets/img/bg-img/texture-flower.jpg') }});">
+        style="background-image: url({{ asset('landing/assets/img/background-img/blue-red-bg.png') }});">
 
         <!-- Video Slideshow -->
         <div class="video-slideshow py-5">
