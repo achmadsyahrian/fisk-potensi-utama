@@ -14,7 +14,7 @@
    <!-- Add Widget -->
    <div class="single-widget-area add-widget mb-30">
        <a href="#">
-           <img src="{{asset('landing/assets/img/ads-img/banner-daftar-manajemen.jpg')}}" alt="">
+           <img src="{{asset('landing/assets/img/ads-img/banner-potrait-sidebar.jpeg')}}" alt="">
        </a>
    </div>
 

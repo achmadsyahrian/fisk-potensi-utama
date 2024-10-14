@@ -40,13 +40,9 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
 
         // Program Studi
             // Ekonomi Syariah
-            Route::get('/program-studi/ekonomi-syariah', [AcademicController::class, 'economy'])->name('academic.economy');
+            Route::get('/program-studi/hubungan-internasional', [AcademicController::class, 'international'])->name('academic.international');
             // Perbankan Syariah
-            Route::get('/program-studi/perbankan-syariah', [AcademicController::class, 'banking'])->name('academic.banking');
-            // Akuntansi
-            Route::get('/program-studi/akuntansi', [AcademicController::class, 'accounting'])->name('academic.accounting');
-            // Manajemen
-            Route::get('/program-studi/manajemen', [AcademicController::class, 'management'])->name('academic.management');
+            Route::get('/program-studi/pendidikan-bahasa-inggris', [AcademicController::class, 'english'])->name('academic.english');
 
         // Akreditasi
         // Route::view('/akreditasi', 'landing.about.accreditation')->name('accreditation');

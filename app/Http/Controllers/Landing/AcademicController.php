@@ -8,7 +8,9 @@ use Illuminate\Http\Request;
 
 class AcademicController extends Controller
 {
-    public function economy() {
+    public function international() {
+        $title = "Hubungan Internasional";
+        
         $latestPosts = Post::where('type', 'news')
             ->where('is_published', 1)
             ->where(function ($query) {
@@ -21,11 +23,13 @@ class AcademicController extends Controller
             ->take(3)
             ->get();
 
-        return view('landing.academic.economy', compact('latestPosts'));
+        return view('landing.academic.international', compact('latestPosts', 'title'));
     }
     
 
-    public function banking() {
+    public function english() {
+        $title = "Pendidikan Bahasa Inggris";
+        
         $latestPosts = Post::where('type', 'news')
             ->where('is_published', 1)
             ->where(function ($query) {
@@ -38,38 +42,6 @@ class AcademicController extends Controller
             ->take(3)
             ->get();
 
-        return view('landing.academic.banking', compact('latestPosts'));
-    }
-
-    public function accounting() {
-        $latestPosts = Post::where('type', 'news')
-            ->where('is_published', 1)
-            ->where(function ($query) {
-                $query->where('category_id', 3)
-                    ->orWhereHas('tags', function ($query) {
-                        $query->where('tags.id', 3);
-                    });
-            })
-            ->orderBy('created_at', 'desc')
-            ->take(3)
-            ->get();
-
-        return view('landing.academic.accounting', compact('latestPosts'));
-    }
-
-    public function management() {
-        $latestPosts = Post::where('type', 'news')
-            ->where('is_published', 1)
-            ->where(function ($query) {
-                $query->where('category_id', 4)
-                    ->orWhereHas('tags', function ($query) {
-                        $query->where('tags.id', 4);
-                    });
-            })
-            ->orderBy('created_at', 'desc')
-            ->take(3)
-            ->get();
-
-        return view('landing.academic.management', compact('latestPosts'));
+        return view('landing.academic.english', compact('latestPosts', 'title'));
     }
 }

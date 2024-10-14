@@ -10,7 +10,7 @@
     @include('landing.partials.breaking-news')
 
     <!-- ##### Post Details Title Area Start ##### -->
-    <div class="post-details-title-area bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/building-img/gedung-b.jpg')}})">
+    <div class="post-details-title-area bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/fakultas-img/visi-misi-header.jpg')}})">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-lg-8">
@@ -69,6 +69,10 @@
                                 </div>
                             @endforeach
                         </div>
+
+                        @if ($latestPosts->isEmpty())
+                            <p class="">Tidak ada berita <i class="far fa-sad-cry"></i></p>
+                        @endif
                     </div>
                 </div>
             </div>

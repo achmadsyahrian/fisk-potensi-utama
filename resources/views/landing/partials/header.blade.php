@@ -34,10 +34,8 @@
                                 </li>
                                 <li><a href="#">Program Studi</a>
                                     <ul class="dropdown">
-                                        <li><a href="{{route('landing.academic.economy')}}">Ekonomi Syariah</a></li>
-                                        <li><a href="{{route('landing.academic.banking')}}">Perbankan Syariah</a></li>
-                                        <li><a href="{{route('landing.academic.accounting')}}">Akuntansi</a></li>
-                                        <li><a href="{{route('landing.academic.management')}}">Manajemen</a></li>
+                                        <li><a href="{{route('landing.academic.international')}}">Hubungan Internasional</a></li>
+                                        <li><a href="{{route('landing.academic.english')}}">Pend. Bahasa Inggris</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Informasi</a>
@@ -52,7 +50,7 @@
                             <!-- Header Add Area -->
                             <div class="header-add-area">
                                 <a href="#">
-                                    <img src="{{asset('landing/assets/img/bg-img/add.png')}}" alt="">
+                                    <img src="{{asset('landing/assets/img/ads-img/banner-top-header.jpg')}}" style="width: 320px; height:80px; object-fit:contain;" alt="Penerimaan Mahasiswa Baru 2024/2025 Universitass Potensi Utama">
                                 </a>
                             </div>
                         </div>

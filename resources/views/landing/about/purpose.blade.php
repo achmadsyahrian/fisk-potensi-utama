@@ -10,7 +10,7 @@
     @include('landing.partials.breaking-news')
 
     <!-- ##### Post Details Title Area Start ##### -->
-    <div class="post-details-title-area bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/building-img/gedung-b.jpg')}})">
+    <div class="post-details-title-area bg-overlay clearfix" style="background-image: url({{asset('landing/assets/img/fakultas-img/visi-misi-header.jpg')}})">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-lg-8">
@@ -37,28 +37,45 @@
                     <div class="post-details-content mb-100">
                         <h1 class="mb-30">Visi & Misi</h1>
                         <h4 class="mb-30">Visi</h4>
-                        <p>Menjadi Fakultas Ekonomi dan Bisnis yang unggul dalam menciptakan lulusan yang kompeten dan berjiwa wirausaha di ditingkat nasional dan berperan aktif di tingkat internasional pada tahun 2035.</p>
+                        <p>“Pada tahun 2035, menjadi Fakultas yang Unggul di bidang Ilmu Sosial dan Ilmu Pendidikan berbasis Digitalisasi dan Teknologi Informasi dan Komunikasi serta mampu Berperan aktif di tingkat nasional dan internasional.”.</p>
+
                         <h4 class="mb-30">Misi</h4>
-                        <table class="text-secondary" style="border-collapse: collapse; width: 100%;">
-                            <tr >
+                        <table class="text-secondary mb-30" style="border-collapse: collapse; width: 100%;">
+                            <tr>
                                 <td style="width: 3%; vertical-align: top;">1.</td>
-                                <td>Melaksanakan pendidikan di bidang ilmu Ekonomi dan Bisnis yang berkualitas tinggi dan berorientasi internasional.</td>
+                                <td>Melaksanakan Pendidikan yang Berkualitas dalam Bidang Ilmu Sosial dan Ilmu Pendidikan yang sesuai dengan Perkembangan IPTEKS dan Kebutuhan Stakeholders.</td>
                             </tr>
                             <tr>
                                 <td style="vertical-align: top;">2.</td>
-                                <td>Melaksanakan penelitian di bidang ilmu Ekonomi dan Bisnis yang mendapatkan rekognisi di tingkat Nasional dan internasional.</td>
+                                <td>Melaksanakan Penelitian dalam Bidang Ilmu Sosial dan Ilmu Pendidikan yang dapat dipublikasikan pada Tingkat Nasional dan Internasional.</td>
                             </tr>
                             <tr>
                                 <td style="vertical-align: top;">3.</td>
-                                <td>Melaksanakan kegiatan PkM (Pengabdian kepada Masyarakat) dibidang ilmu Ekonomi dan bisnis yang berguna bagi kepentingan masyarakat.</td>
+                                <td>Melaksanakan Kegiatan dan Layanan yang Bermanfaat bagi Masyarakat dalam Bidang Ilmu Sosial dan Ilmu Pendidikan.</td>
                             </tr>
                             <tr>
                                 <td style="vertical-align: top;">4.</td>
-                                <td>Melaksanakan kerjasama dengan Institusi pada tingkat Nasional maupun Internasional yang mendukung pelaksanaan tridharma Perguruan Tinggi di bidang Ilmu Ekonomi dan Bisnis.</td>
+                                <td>Menjalin kerjasama dengan instansi,   masyarakat, dan stakeholder lainnya pada tingkat nasional dan internasional untuk mendukung terselenggaranya Tridharma perguruan tinggi.</td>
+                            </tr>
+                        </table>
+
+                        <h4 class="mb-30">Tujuan</h4>
+                        <table class="text-secondary" style="border-collapse: collapse; width: 100%;">
+                            <tr>
+                                <td style="width: 3%; vertical-align: top;">1.</td>
+                                <td>Menghasilkan lulusan yang unggul, profesional, berkarakter dan bermental wirausaha dalam bidang ilmu sosial dan ilmu pendidikan.</td>
                             </tr>
                             <tr>
-                                <td style="vertical-align: top;">5.</td>
-                                <td>Melaksanakan layanan akademik dan tata kelola yang baik (good governance).</td>
+                                <td style="vertical-align: top;">2.</td>
+                                <td>Menghasilkan karya ilmiah dan hasil penelitian lainnya dalam bidang ilmu sosial dan ilmu pendidikan yang dipublikasikan pada tingkat nasional dan internasional.</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">3.</td>
+                                <td>Pengembangan Perilaku Kecendekiawanan Dosen dan Mahasiswa melalui Kegiatan Pengabdian kepada Masyarakat.</td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">4.</td>
+                                <td>Menghasilkan berbagai kesepakatan dan kegiatan kerjasama di Tingkat Lokal, Nasional, Regional dan Internasional untuk Mendukung Terselenggaranya Tridharma Perguruan Tinggi.</td>
                             </tr>
                         </table>
                     </div>
@@ -91,6 +108,9 @@
                                 </div>
                             @endforeach
                         </div>
+                        @if ($latestPosts->isEmpty())
+                            <p >Tidak ada berita <i class="far fa-sad-cry"></i></p>
+                        @endif
                     </div>
                 </div>
             </div>

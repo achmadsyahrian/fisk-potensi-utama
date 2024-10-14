@@ -161,6 +161,10 @@
                                 </div>
                             </div>
                         </div>
+
+                        @if ($latestNewsContent->isEmpty())
+                            <p class="text-center">Tidak ada berita <i class="far fa-sad-cry"></i></p>
+                        @endif
                     </div>
                 </div>
 
@@ -172,7 +176,7 @@
                         <!-- Add Widget -->
                         <div class="single-widget-area add-widget mb-30">
                             <a href="#">
-                                <img src="{{ asset('landing/assets/img/ads-img/banner-daftar-manajemen.jpg') }}"
+                                <img src="{{ asset('landing/assets/img/ads-img/banner-potrait-sidebar.jpeg') }}"
                                     alt="">
                             </a>
                         </div>
@@ -192,13 +196,13 @@
                     <div class="featured-video-area d-flex align-items-center justify-content-center">
                         <div class="video-content text-center">
                             {{-- <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a> --}}
-                            <a href="{{ asset('landing/assets/video/Peresmian Galeri Investasi UPU_360P.mp4') }}"
+                            <a href="{{ asset('landing/assets/video/Company Profile Universitas Potensi Utama.mp4') }}"
                                 class="video-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="fa fa-play" aria-hidden="true"></i>
                             </a>
 
-                            <span class="published-date">19 Des, 2019</span>
-                            <h3 class="video-title">Peresmian Galeri Investasi UPU</h3>
+                            <span class="published-date">03 Mar, 2020</span>
+                            <h3 class="video-title">Tentang Kehidupan Kampus</h3>
                         </div>
                     </div>
                 </div>
@@ -231,6 +235,10 @@
                     </div>
                 @endforeach
 
+                @if ($latestAnnouncementContent->isEmpty())
+                    <p class="mx-auto">Tidak ada pengumuman <i class="far fa-sad-cry"></i></p>
+                @endif
+                
                 <div class="col-12">
                     <div class="load-more-button text-center">
                         <a href="{{route('landing.announcement.index')}}" class="btn newsbox-btn">Lihat Selengkapnya</a>
