@@ -39,9 +39,9 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
         })->name('purpose');
 
         // Program Studi
-            // Ekonomi Syariah
+            // Hubungan Internasional
             Route::get('/program-studi/hubungan-internasional', [AcademicController::class, 'international'])->name('academic.international');
-            // Perbankan Syariah
+            // Pendidikan Bahasa Inggris
             Route::get('/program-studi/pendidikan-bahasa-inggris', [AcademicController::class, 'english'])->name('academic.english');
 
         // Akreditasi

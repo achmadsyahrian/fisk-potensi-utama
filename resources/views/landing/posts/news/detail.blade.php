@@ -1,7 +1,7 @@
 @extends('landing.layouts.app')
 {{-- Head --}}
 @section('title', $post->title . ' - ' . env('APP_NAME'))
-@section('meta_keywords', 'berita feb upu, berita feb potensi utama, berita pendidikan fakultas ekonomi bisnis, berita kampus upu')
+@section('meta_keywords', 'berita fisk upu, berita fisk potensi utama, berita pendidikan fakultas ilmu sosial & kependidikan, berita kampus upu')
 @section('canonical', env('APP_URL').'/berita/' . $post->slug)
 @section('meta_description', Str::limit(strip_tags($post->content), 200))
 
