@@ -16,7 +16,7 @@
                     <!-- Post Content -->
                     <div class="post-content">
                         <p class="tag"><span>Pengumuman</span></p>
-                        <p class="post-title">{{$post->title}}</p>
+                        <h1 class="post-title">{{$post->title}}</h1>
                         <div class="d-flex align-items-center">
                             <span class="post-date mr-30">{{ $post->created_at->format('M j, Y') }}</span>
                             <span class="post-date">By {{$post->user->name}}</span>
@@ -34,7 +34,7 @@
                 <div class="col-12 col-lg-8">
                     <div class="post-details-content mb-100">
                         @if ($post->thumbnail)
-                        <img class="mb-30" src="{{asset($post->thumbnail)}}" style="width:100%; height:400px; object-fit:cover;" alt="">
+                        <img class="mb-30" src="{{asset($post->thumbnail)}}" style="width:100%; height:400px; object-fit:cover;" alt="{{$post->title}}">
                         @endif
                         <div class="content">
                             {!! $post->content !!}

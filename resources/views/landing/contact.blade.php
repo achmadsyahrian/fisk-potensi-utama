@@ -12,7 +12,7 @@
 
     <!-- ##### Post Details Title Area Start ##### -->
     <div class="post-details-title-area bg-overlay clearfix"
-        style="background-image: url({{ asset('landing/assets/img/building-img/gedung-b.jpg') }})">
+        style="background-image: url({{ asset('landing/assets/img/fakultas-img/visi-misi-header.jpg') }})">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-lg-8">
@@ -38,7 +38,7 @@
                 <div class="col-12 col-lg-8">
                     <div class="contact-content mb-100">
                         {{-- <h1 class="mb-30">Berkas Perkuliahan</h1> --}}
-                        <a href="#" class="d-block mb-50"> <img src="{{asset('landing/assets/img/logo-img/logo-feb.png')}}" alt="Logo {{env('APP_NAME')}}"></a>
+                        <a href="#" class="d-block mb-50"> <img src="{{asset('landing/assets/img/logo-img/logo-fakultas.png')}}" alt="Logo {{env('APP_NAME')}}"></a>
                         <!-- Single Contact Info -->
                         <div class="single-contact-info d-flex align-items-center">
                             <div class="icon mr-15">
@@ -61,7 +61,7 @@
                             <div class="icon mr-15">
                                 <i class="fas fa-envelope fa-lg"></i>
                             </div>
-                            <p>infofe@potensi-utama.ac.id</p>
+                            <p><a href="mailto:infoftik@potensi-utama.ac.id">infoftik@potensi-utama.ac.id</a></p>
                         </div>
 
                         <!-- Contact Social Info -->
