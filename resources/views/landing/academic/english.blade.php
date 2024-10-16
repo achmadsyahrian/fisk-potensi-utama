@@ -1,10 +1,9 @@
 @extends('landing.layouts.app')
 {{-- Head --}}
-@section('title', 'Program Studi Perbankan Syariah - ' . env('APP_NAME'))
-@section('meta_description', 'Program Studi Perbankan Syariah - ' . env('APP_NAME'))
-@section('meta_keywords', 'ps upu, perbankan syariah potensi utama, visi misi perbankan syariah upu, berita perbankan
-    syariah potensi utama')
-@section('canonical', env('APP_URL') . '/program-studi/perbankan-syariah')
+@section('title', 'Program Studi Pendidikan Bahasa Inggris - ' . env('APP_NAME'))
+@section('meta_description', 'Program Studi Pendidikan Bahasa Inggris - ' . env('APP_NAME'))
+@section('meta_keywords', 'ps upu, pendidikan bahasa inggris potensi utama, visi misi pendidikan bahasa inggris upu, berita pendidikan bahasa inggris potensi utama')
+@section('canonical', env('APP_URL') . '/program-studi/pendidikan bahasa inggris')
 
 @section('content')
 

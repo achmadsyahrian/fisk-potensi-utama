@@ -1,9 +1,9 @@
 @extends('landing.layouts.app')
 {{-- Head --}}
-@section('title', 'Program Studi Akuntansi - '. env('APP_NAME'))
-@section('meta_description', 'Program Studi Akuntansi - '. env('APP_NAME'))
-@section('meta_keywords', 'akuntansi upu, akuntansi potensi utama, visi misi akuntansi upu, berita akuntansi potensi utama')
-@section('canonical', env('APP_URL').'/program-studi/akuntansi')
+@section('title', 'Program Studi Hubungan Internasional - '. env('APP_NAME'))
+@section('meta_description', 'Program Studi Hubungan Internasional - '. env('APP_NAME'))
+@section('meta_keywords', 'hubungan internasional upu, hubungan internasional potensi utama, visi misi hubungan internasional upu, berita hubungan internasional potensi utama')
+@section('canonical', env('APP_URL').'/program-studi/hubungan internasional')
 @section('content')
 
    @include('landing.partials.breaking-news')
