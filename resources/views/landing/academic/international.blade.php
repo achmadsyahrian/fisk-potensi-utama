@@ -3,7 +3,10 @@
 @section('title', 'Program Studi Hubungan Internasional - '. env('APP_NAME'))
 @section('meta_description', 'Program Studi Hubungan Internasional - '. env('APP_NAME'))
 @section('meta_keywords', 'hubungan internasional upu, hubungan internasional potensi utama, visi misi hubungan internasional upu, berita hubungan internasional potensi utama')
-@section('canonical', env('APP_URL').'/program-studi/hubungan internasional')
+@section('canonical', env('APP_URL').'/program-studi/hubungan-internasional')
+@section('json-ld')
+<script type="application/ld+json">{"@context": "https://schema.org","@type": "EducationalOrganization","name": "Hubungan Internasional","url": "{{env('APP_URL')}}/program-studi/hubungan-internasional","address": {"@type": "PostalAddress","addressLocality": "Medan","addressRegion": "Sumatera Utara","postalCode": "20241","streetAddress": "Jl. K.L Yos Sudarso, Gg. Famili No.247, Tj. Mulia, Kec. Medan Deli" },"department": {"@type": "EducationalOrganization","name": "{{env('APP_NAME')}}","url": "{{env('APP_URL')}}"}}</script>
+@endsection
 @section('content')
 
    @include('landing.partials.breaking-news')

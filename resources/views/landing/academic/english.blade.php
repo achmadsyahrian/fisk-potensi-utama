@@ -3,8 +3,10 @@
 @section('title', 'Program Studi Pendidikan Bahasa Inggris - ' . env('APP_NAME'))
 @section('meta_description', 'Program Studi Pendidikan Bahasa Inggris - ' . env('APP_NAME'))
 @section('meta_keywords', 'ps upu, pendidikan bahasa inggris potensi utama, visi misi pendidikan bahasa inggris upu, berita pendidikan bahasa inggris potensi utama')
-@section('canonical', env('APP_URL') . '/program-studi/pendidikan bahasa inggris')
-
+@section('canonical', env('APP_URL') . '/program-studi/pendidikan-bahasa-inggris')
+@section('json-ld')
+<script type="application/ld+json">{"@context": "https://schema.org","@type": "EducationalOrganization","name": "Pendidikan Bahasa Inggris","url": "{{env('APP_URL')}}/program-studi/pendidikan-bahasa-inggris","address": {"@type": "PostalAddress","addressLocality": "Medan","addressRegion": "Sumatera Utara","postalCode": "20241","streetAddress": "Jl. K.L Yos Sudarso, Gg. Famili No.247, Tj. Mulia, Kec. Medan Deli" },"department": {"@type": "EducationalOrganization","name": "{{env('APP_NAME')}}","url": "{{env('APP_URL')}}"}}</script>
+@endsection
 @section('content')
 
     @include('landing.partials.breaking-news')
