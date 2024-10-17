@@ -28,13 +28,13 @@ class GenerateSitemap extends Command
                 ->setPriority(0.8)
             )
             // Hubungan Internasional
-            ->add(Url::create('/hubungan-internasional')
+            ->add(Url::create('/program-studi/hubungan-internasional')
                 ->setLastModificationDate(now())
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                 ->setPriority(0.8)
             )
             // Pendidikan Bahasa Inggris
-            ->add(Url::create('/pendidikan-bahasa-inggris')
+            ->add(Url::create('/program-studi/pendidikan-bahasa-inggris')
                 ->setLastModificationDate(now())
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                 ->setPriority(0.8)
@@ -53,6 +53,12 @@ class GenerateSitemap extends Command
             )
             // Penelitian
             ->add(Url::create('/penelitian')
+                ->setLastModificationDate(now())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+                ->setPriority(0.8)
+            )
+            // Administrasi
+            ->add(Url::create('/administrasi')
                 ->setLastModificationDate(now())
                 ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
                 ->setPriority(0.8)
