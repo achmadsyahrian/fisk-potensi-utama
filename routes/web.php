@@ -19,6 +19,14 @@ Route::get('sitemap.xml', function () {
     return response()->file(public_path('sitemap.xml'));
 });
 
+// Ubah Bahasa
+Route::get('/lang/{lang}', function ($lang) {
+    if (in_array($lang, ['id', 'en'])) {
+        session()->put('locale', $lang);
+    }
+    return redirect()->back();
+})->name('change.language');
+
 
 Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
     Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -31,7 +39,7 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
         Route::get('/visi-misi', function() {
             $latestPosts = Post::where('type', 'news')
                 ->where('is_published', 1)
-                ->orderBy('created_at', 'desc')
+                ->orderBy('date', 'desc')
                 ->take(4)
                 ->get();
 
@@ -75,7 +83,7 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
         Route::get('/penelitian', function(){
             $latestPosts = Post::where('type', 'news')
                 ->where('is_published', 1)
-                ->orderBy('created_at', 'desc')
+                ->orderBy('date', 'desc')
                 ->take(4)
                 ->get();
 
@@ -87,7 +95,7 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
         Route::get('/administrasi', function(){
             $latestPosts = Post::where('type', 'news')
                 ->where('is_published', 1)
-                ->orderBy('created_at', 'desc')
+                ->orderBy('date', 'desc')
                 ->take(4)
                 ->get();
 
@@ -98,7 +106,7 @@ Route::group(['namespace' => 'Landing', 'as' => 'landing.'], function() {
         Route::get('/kontak-fakultas', function(){
             $latestPosts = Post::where('type', 'news')
                 ->where('is_published', 1)
-                ->orderBy('created_at', 'desc')
+                ->orderBy('date', 'desc')
                 ->take(5)
                 ->get();
             $tags = Tag::all();

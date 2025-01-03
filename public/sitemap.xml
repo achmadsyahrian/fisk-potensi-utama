@@ -2,57 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
         <loc>http://fisk-potensi-utama.test</loc>
-        <lastmod>2024-12-03T02:48:34+00:00</lastmod>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
 
             </url>
     <url>
         <loc>http://fisk-potensi-utama.test/visi-misi</loc>
-        <lastmod>2024-12-03T02:48:34+00:00</lastmod>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
 
             </url>
     <url>
         <loc>http://fisk-potensi-utama.test/program-studi/hubungan-internasional</loc>
-        <lastmod>2024-12-03T02:48:34+00:00</lastmod>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
 
             </url>
     <url>
         <loc>http://fisk-potensi-utama.test/program-studi/pendidikan-bahasa-inggris</loc>
-        <lastmod>2024-12-03T02:48:34+00:00</lastmod>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
 
             </url>
     <url>
         <loc>http://fisk-potensi-utama.test/berita</loc>
-        <lastmod>2024-12-03T02:48:34+00:00</lastmod>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
 
             </url>
     <url>
         <loc>http://fisk-potensi-utama.test/pengumuman</loc>
-        <lastmod>2024-12-03T02:48:34+00:00</lastmod>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://fisk-potensi-utama.test/pengumuman/skripsi</loc>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://fisk-potensi-utama.test/pengumuman/pkl</loc>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://fisk-potensi-utama.test/pengumuman/perwalian</loc>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://fisk-potensi-utama.test/pengumuman/krs</loc>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://fisk-potensi-utama.test/pengumuman/ujian</loc>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
 
             </url>
     <url>
         <loc>http://fisk-potensi-utama.test/penelitian</loc>
-        <lastmod>2024-12-03T02:48:34+00:00</lastmod>
-
-            </url>
-    <url>
-        <loc>http://fisk-potensi-utama.test/administrasi</loc>
-        <lastmod>2024-12-03T02:48:34+00:00</lastmod>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
 
             </url>
     <url>
         <loc>http://fisk-potensi-utama.test/berita/fakultas-ilmu-sosial-dan-kependidikan-fisk-universitas-potensi-utama-gandeng-unhcr-dan-tanri-abeng-university-jajaki-proyek-kemanusiaan-internasional</loc>
-        <lastmod>2024-10-25T02:55:12+00:00</lastmod>
+        <lastmod>2025-01-03T03:21:59+00:00</lastmod>
 
             </url>
     <url>
         <loc>http://fisk-potensi-utama.test/berita/virtual-mou-signing-antara-universitas-potensi-utama-dan-universiti-malaysia-sarawak-unimas</loc>
-        <lastmod>2024-10-25T03:04:44+00:00</lastmod>
+        <lastmod>2025-01-03T03:22:13+00:00</lastmod>
 
             </url>
     <url>
         <loc>http://fisk-potensi-utama.test/berita/uji-kompetensi-bahasa-inggris-ukbig-tingkat-nasional</loc>
-        <lastmod>2024-10-25T03:06:16+00:00</lastmod>
+        <lastmod>2025-01-03T03:22:20+00:00</lastmod>
 
             </url>
 </urlset>
